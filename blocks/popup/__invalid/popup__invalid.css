@@ -1,0 +1,5 @@
+  .popup__invalid  {    
+    padding: 10px;
+    opacity: 1;
+    border-color: #FF3333;
+  }

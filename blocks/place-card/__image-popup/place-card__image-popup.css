@@ -1,0 +1,14 @@
+.popup.place-card__image-popup {
+    display: flex;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+  }
+  
+@media screen and (max-width: 540px) {
+  .popup.place-card__image-popup {
+    width: calc(100% - 60px);
+  }
+}
+  
