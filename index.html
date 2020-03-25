@@ -10,7 +10,7 @@
 <body>
   <div class="root">
     <header class="header root__section">
-      <img src="<%=require('./images/logo.svg')%>" alt="mesto logo" class="logo">
+      <img src="<%=require('./images/logo.svg')%>"" alt="mesto logo" class="logo">
     </header>
 
     <div class="profile root__section">
@@ -30,7 +30,7 @@
     </div>
     <div class="popup" id="cardmaker"> <!--добавил id-->
       <div class="popup__content">
-        <img src="<%=require('./images/close.svg')%>" alt="" class="popup__close">
+        <img src="./images/close.svg" alt="" class="popup__close">
         <h3 class="popup__title">Новое место</h3>
         <form class="popup__form" name="newCard"> <!--добавил имя newCard-->
             <input  type="text" type="reset" name="placeName" class="popup__input popup__input_placeName" placeholder="Название"required minlength="2" maxlength="30" > <!--добавил имя placeName  Добавил валидацию-->
@@ -43,7 +43,7 @@
     </div>   
     <div class="popup" id="userInfoEdit"> <!--Добавил  новую секцию по редактированию профиля-->
       <div class="popup__content">
-        <img src="<%=require('./images/close.svg')%>" alt="" class="popup__close">
+        <img src="./images/close.svg" alt="" class="popup__close">
         <h3 class="popup__title">Редактировать профиль</h3>
         <form class="popup__form" name="userInfoEdit">
             <input type="text"  name="userName" class="popup__input popup__input_userName" placeholder="Имя" required minlength="2" maxlength="30">
@@ -56,7 +56,7 @@
     </div> 
     <div class="popup"  id="increaseImage"> <!--Новая секция  для попапа картинки-->
       <div class="popup__content">
-        <img src="<%=require('./images/close.svg')%>" alt="" class="popup__close">
+        <img src="./images/close.svg" alt="" class="popup__close">
       </div>
 
   </div>
