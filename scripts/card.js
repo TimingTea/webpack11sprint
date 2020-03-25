@@ -1,4 +1,5 @@
-class Card {
+import {popupimg} from './script'
+export class Card {
 
 
   like(event) {

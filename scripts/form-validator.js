@@ -1,4 +1,4 @@
-  class FormValidator {
+  export class FormValidator {
     constructor(popup){
       this.form = popup.querySelector('.popup__form');
       this.button = popup.querySelector('.popup__button');

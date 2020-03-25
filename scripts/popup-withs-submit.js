@@ -1,4 +1,6 @@
-class PopupWithSubmit extends Popup{
+import {Popup} from './popup'
+
+export  class PopupWithSubmit extends Popup{
   constructor(popup, userInfo){
     super(popup, userInfo);
     this.userInfo = userInfo;

@@ -1,22 +1,23 @@
-class popupImage extends Popup {
-    constructor(popup) {
+import {Popup} from './popup'
+export class popupImage extends Popup {
+    constructor(popup, popupimg) {
       super(popup);     
-      const popupIncreaseImage = document.querySelector('#increaseImage');
-      this.popupIncreaseImage = popupIncreaseImage;
+      this.popupimg = popupimg;
+     
     }
     
     
     popupImage(link) {
-      const popupIncreaseImage = document.querySelector('#increaseImage');
-      this.popupIncreaseImage = popupIncreaseImage;
-      this.popupIncreaseImage.firstElementChild.style.backgroundImage = link;
-      this.popupIncreaseImage.classList.add('place-card__image-popup');
-      this.popupIncreaseImage.classList.add('popup_is-opened');
+      const popupimg = document.querySelector('#increaseImage');
+      this.popupimg = popupimg;
+      this.popupimg.firstElementChild.style.backgroundImage = link;
+      this.popupimg.classList.add('place-card__image-popup');
+      this.popupimg.classList.add('popup_is-opened');
     
     }
     
     close(){
-      this.popupIncreaseImage.classList.remove('place-card__image-popup');
-      this.popupIncreaseImage.classList.remove('popup_is-opened');
+      this.popupimg.classList.remove('place-card__image-popup');
+      this.popupimg.classList.remove('popup_is-opened');
     }
     }

@@ -1,5 +1,4 @@
-
-    class Popup {
+    export class Popup {
       constructor(popup){
         this.popup = popup;
         this.popup.querySelector('.popup__close').addEventListener('click', ()=>{

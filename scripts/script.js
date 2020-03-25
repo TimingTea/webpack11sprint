@@ -1,3 +1,18 @@
+import '../pages/index.css'
+
+import {Card} from './card'
+import {Api} from './api'
+import {UserInfo} from './user-info'
+import {CardList} from './card-list'
+import {PopupAddCard} from './popup-add-card'
+import {PopupWithSubmit} from './popup-withs-submit'
+import {Popup} from './popup'
+import {PopupEditUser} from './popup-edit-user'
+import {FormValidator} from './form-validator'
+import {popupImage} from './popup-image'
+import {initialCards} from './initialCards'
+
+
 (function () {
 const buttonAddCard = document.querySelector('#newCardButton'); //кнопка - для открытия попапа добавления карточки
 const userInfoContainer = document.querySelector('.user-info');
@@ -55,9 +70,9 @@ const popupWithSmbt = new PopupWithSubmit(popup, userInfo);
     .catch(error => {
       console.log(`Error setting user data - ${error}`);
     })
-
+   
   })();
-  const popupimg = new popupImage(document.querySelector('#increaseImage'));
+  export const popupimg = new popupImage(document.querySelector('#increaseImage'));
   const formValidatorUser = new FormValidator(document.querySelector('#userInfoEdit'));
 
 
