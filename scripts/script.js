@@ -27,7 +27,7 @@ const avatarContainer = document.querySelector('.user-info__photo');
 
 const card = new Card();
 const api = new Api({
-  baseUrl: 'https://praktikum.tk/cohort8',
+  baseUrl: serverUrl = NODE_ENV === 'development' ? 'http://praktikum.tk/cohort8' : 'https://praktikum.tk/cohort8',
   headers: {
     authorization: 'ea4e2b6f-f98e-4cf4-b38f-fe41e9a934dd',
     'Content-Type': 'application/json'
