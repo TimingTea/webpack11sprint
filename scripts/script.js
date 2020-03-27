@@ -26,8 +26,9 @@ const jobContainer = document.querySelector('.user-info__job');
 const avatarContainer = document.querySelector('.user-info__photo');
 
 const card = new Card();
+const serverUrl = NODE_ENV === 'development' ? 'http://praktikum.tk/cohort8' : 'https://praktikum.tk/cohort8';
 const api = new Api({
-  baseUrl: serverUrl = NODE_ENV === 'development' ? 'http://praktikum.tk/cohort8' : 'https://praktikum.tk/cohort8',
+  baseUrl: serverUrl,
   headers: {
     authorization: 'ea4e2b6f-f98e-4cf4-b38f-fe41e9a934dd',
     'Content-Type': 'application/json'
